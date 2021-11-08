@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {box-sizing: border-box}
+
+@media screen { 
+  
+  /* start of screen rules. */ 
+  
+  /* Generic pane rules */
+  body { margin: 0 }
+  .row, .col { overflow: hidden; position: absolute; }
+  .row { left: 0; right: 0; }
+  .col { top: 0; bottom: 0; }
+  .scroll-x { overflow-x: auto; }
+  .scroll-y { overflow-y: auto; }
+
+  .header.row { height: 75px; top: 0; }
+  .body.row { top: 75px; bottom: 50px; }
+  .footer.row { height: 50px; bottom: 0; }
+  
+  /* end of screen rules. */ 
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: auto;
+  margin: 0;
+  font-family: Arial;
+  background-color: black;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/* Style the MusicCards */
+.musicCard {
+  padding: 20px;
+  margin: 20px;
+  border-width: 2px;
+  box-shadow: #555;
+}
+
+
+
+#Home {background-color: #373331;}
+#Music {background-color: #80ac7b;}
+#Videos {background-color: #0c9cee;}
+#Games {background-color: #f66b34;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, '#373331')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Music', this, '#80ac7b')">Music</button>
+<button class="tablink" onclick="openPage('Videos', this, '#0c9cee')">Videos</button>
+<button class="tablink" onclick="openPage('Games', this, '#f66b34')">Games</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+</div>
+
+<div id="Music" class="tabcontent">
+  <h3>Music</h3>
+
+  <div id="allMusicCards">
+  <!--Bandcamp Embeds-->
+  <!--Digital Heaven-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3706823200/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-heaven">Digital Heaven by nightsisters</a></iframe>
+  </div>
+  <!--Select Psychadelic Works-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2178922091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/select-psychedelic-works">Select Psychedelic Works by nightsisters</a></iframe>
+  </div>
+  <!--Ghost Cave-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2600123265/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/ghost-cave">ghost cave by nightsisters</a></iframe>
+  <!--Funito-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=423954299/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/funito">funito by nightsisters</a></iframe>
+  <!--Abstract Metaphysical Speculation-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1854805674/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/abstract-metaphysical-speculation">abstract metaphysical speculation by nightsisters</a></iframe>
+  </div>
+  <!--Digital Samurai-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3100369233/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-samurai">digital samurai by nightsisters</a></iframe>
+  </div>
+  <!--Aroopayana-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3994672091/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/aroopayana">aroopayana by nightsisters</a></iframe>
+  </div>
+  <!--Phantom-->
+  <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=340712263/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/phantom">phantom by nightsisters</a></iframe>
+  </div>
+  <!--Lost Classics-->
+    <div class="musicCard">
+  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=814636353/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/lost-classics-2">lost classics by nightsisters</a></iframe>
+  </div>
+</div>
+
+</div>
+
+<div id="Videos" class="tabcontent">
+  <h3>Videos</h3>
+  <!--Youtube PLaylist Embed-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="Games" class="tabcontent">
+  <h3>Games</h3>
+  <p>Games</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
