@@ -67,6 +67,8 @@ body, html {
   box-shadow: #555;
   background-color: #3d405b;
   text-align: right;
+  width:60%;
+  align-self: right;
 }
 .musicCardLeft {
   padding: 20px;
@@ -75,8 +77,13 @@ body, html {
   box-shadow: #555;
   background-color: #3d405b;
   text-align: left;
+  width: 60%;
+  align-self: left;
 }
 
+.panel{}
+
+.card{}
 
 
 #Home {background-color: #373331;}
@@ -143,14 +150,24 @@ body, html {
 </div>
 
 <div id="Videos" class="tabcontent">
-  <h3>Videos</h3>
-  <!--Youtube PLaylist Embed-->
-  <iframe width="auto" height="auto" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class=panel>
+    
+  <h1>Videos</h1>
+  <!--Youtube PLaylist Embeds-->
+  <!--Sleep Music-->
+  <div class=card>
+  <iframe width="80%" height="auto" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
 
-<div id="Projects and Games" class="tabcontent">
-  <h3>Projects and Games</h3>
-  <p>Projects and Games</p>
+<div id="Games" class="tabcontent">
+  <h1>Projects and Games</h1>
+  <div class=panel>
+    <div class=card>
+      <iframe width="80%" src=https://stone-skin-media.itch.io/spooky-investigation></iframe>
+  </div>
+  
 </div>
 
 <script>
