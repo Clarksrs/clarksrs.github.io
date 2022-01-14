@@ -54,36 +54,47 @@ body, html {
   color: white;
   display: none;
   padding: 100px 20px;
-  height: 100%;
-  align-content: center;
+  max-height: 100%;
   text-align: center;
 }
 
+.homePanel{}
+.homeCard{}
+
 /* Style the MusicCards */
 .musicCardRight {
-  padding: 20px;
-  margin: 20px;
+  padding: 1rem;
+  margin: 1rem;
   border-width: 2px;
   box-shadow: #555;
   background-color: #3d405b;
   text-align: right;
-  width:60%;
+  width:90%;
   align-self: right;
 }
 .musicCardLeft {
-  padding: 20px;
-  margin: 20px;
+  padding: 1rem;
+  margin: 1rem;
   border-width: 2px;
   box-shadow: #555;
   background-color: #3d405b;
   text-align: left;
-  width: 60%;
+  width: 90%;
   align-self: left;
 }
 
-.panel{}
+.musicPanel{}
 
-.card{}
+
+.videoCard{}
+
+.videoPanel{}
+
+
+.gamePanel{}
+
+.gameCard{}
+
 
 
 #Home {background-color: #373331;}
@@ -100,63 +111,69 @@ body, html {
 <button class="tablink" onclick="openPage('Games', this, '#f66b34')">Games</button>
 
 <div id="Home" class="tabcontent">
+  <div class=homePanel>
   <h3>Home</h3>
+  <div class=homeCard>
   <img src=https://user-images.githubusercontent.com/91739883/143778321-852dbc0f-e301-40d5-8ab2-15807dcdf4a9.jpg style="width:auto;height:60vh;align-items: center;">
+    </div>
+    </div>
 </div>
 
 <div id="Music" class="tabcontent">
+  <div class=musicPanel>
   <h3>Music</h3>
 
   <div id="allMusicCards">
   <!--Bandcamp Embeds-->
   <!--Digital Heaven-->
   <div class="musicCardLeft">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3706823200/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-heaven">Digital Heaven by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3706823200/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-heaven">Digital Heaven by nightsisters</a></iframe>
   </div>
   <!--Select Psychadelic Works-->
   <div class="musicCardRight">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2178922091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/select-psychedelic-works">Select Psychedelic Works by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2178922091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/select-psychedelic-works">Select Psychedelic Works by nightsisters</a></iframe>
   </div>
   <!--Ghost Cave-->
   <div class="musicCardLeft">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2600123265/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/ghost-cave">ghost cave by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2600123265/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/ghost-cave">ghost cave by nightsisters</a></iframe>
   </div>
   <!--Funito-->
   <div class="musicCardRight">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=423954299/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/funito">funito by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=423954299/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/funito">funito by nightsisters</a></iframe>
   </div>
   <!--Abstract Metaphysical Speculation-->
   <div class="musicCardLeft">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1854805674/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/abstract-metaphysical-speculation">abstract metaphysical speculation by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1854805674/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/abstract-metaphysical-speculation">abstract metaphysical speculation by nightsisters</a></iframe>
   </div>
   <!--Digital Samurai-->
   <div class="musicCardRight">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3100369233/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-samurai">digital samurai by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3100369233/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-samurai">digital samurai by nightsisters</a></iframe>
   </div>
   <!--Aroopayana-->
   <div class="musicCardLeft">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3994672091/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/aroopayana">aroopayana by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3994672091/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/aroopayana">aroopayana by nightsisters</a></iframe>
   </div>
   <!--Phantom-->
   <div class="musicCardRight">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=340712263/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/phantom">phantom by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=340712263/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/phantom">phantom by nightsisters</a></iframe>
   </div>
   <!--Lost Classics-->
   <div class="musicCardLeft">
-  <iframe style="border: 0; width: 50%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=814636353/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/lost-classics-2">lost classics by nightsisters</a></iframe>
+  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=814636353/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/lost-classics-2">lost classics by nightsisters</a></iframe>
+  </div>
   </div>
 </div>
 
 </div>
 
 <div id="Videos" class="tabcontent">
-  <div class=panel>
+  <div class=videoPanel>
     
   <h1>Videos</h1>
   <!--Youtube PLaylist Embeds-->
   <!--Sleep Music-->
-  <div class=card>
-  <iframe width="80%" height="auto" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class=videoCard>
+  <iframe max-width="80%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </div>
