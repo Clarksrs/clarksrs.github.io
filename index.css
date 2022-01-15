@@ -1,0 +1,149 @@
+* {box-sizing: border-box;}
+
+@media screen {   
+  /* Generic pane rules */
+  .row, .col { overflow: hidden; position: absolute; }
+  .row { left: 0; right: 0; }
+  .col { top: 0; bottom: 0; }
+  .scroll-x { overflow-x: auto; }
+  .scroll-y { overflow-y: auto; }
+
+  .header.row { height: 75px; top: 0; }
+  .body.row { top: 75px; bottom: 50px; }
+  .footer.row { height: 50px; bottom: 0; }
+  
+  /* end of screen rules. */ 
+}
+
+/*Tab Background Colors */
+#Home {background-color: #373331;}
+#Music {background-color: #80ac7b;}
+#Videos {background-color: #0c9cee;}
+#Games {background-color: #f66b34;}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: .8rem 1rem;
+  font-size: 1rem;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 3em 1em;
+  height: fill;
+  text-align: center;
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: fit-content;
+    margin: 0;
+    font-family: Arial;
+    background-color: black;
+}
+
+/* IMG styles */
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 80vh;
+    margin: auto;
+}
+
+/*iframe*/
+iframe{max-width: 100%;}
+
+/*Typography*/
+h1{font-size:2.5rem;margin:.2em;}
+h2{font-size:2rem;margin:.2em;}
+h3{font-size:1.5rem;margin:.2em;}
+p{
+    font-size: 1rem;
+}
+a{}
+a:hover{}
+
+li{text-align: left;}
+
+ul{line-height: 1.2;}
+
+/* Home Page Styles */
+.homePanel{
+    background-color:black;
+    width:100%;
+    max-height: ;
+    padding: .5em;
+    margin: auto;
+}
+.homeCard{
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Music Page Styles */
+.musicCard{
+  padding: .5em;
+  margin: 1em auto;
+  border: none;
+  background-color: #3d405b;
+  width:90%;
+}
+
+.left{text-align: left;}
+
+.right{text-align: right;}
+
+.musicPanel{
+    background-color:black;
+    width:100%;
+    padding: .5em;
+    margin: auto;
+}
+
+
+/*Video Page Styles */
+.videoCard{
+}
+
+.videoPanel{
+    background-color:black;
+    width:100%;
+    padding: .5em;
+    margin: auto;
+}
+
+/*Game Page Styles */
+.gamePanel{
+    background-color:black;
+    width:100%;
+    padding: .5em;
+    margin: auto;
+}
+
+.gameCard{}
+
+/*
+IDs
+*/
+

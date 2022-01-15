@@ -1,210 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-* {box-sizing: border-box}
-
-@media screen { 
-  
-  /* start of screen rules. */ 
-  
-  /* Generic pane rules */
-  .row, .col { overflow: hidden; position: absolute; }
-  .row { left: 0; right: 0; }
-  .col { top: 0; bottom: 0; }
-  .scroll-x { overflow-x: auto; }
-  .scroll-y { overflow-y: auto; }
-
-  .header.row { height: 75px; top: 0; }
-  .body.row { top: 75px; bottom: 50px; }
-  .footer.row { height: 50px; bottom: 0; }
-  
-  /* end of screen rules. */ 
-}
-
-/* Set height of body and the document to 100% */
-body, html {
-  height: auto;
-  margin: 0;
-  font-family: Arial;
-  background-color: black;
-}
-
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  max-height: 100%;
-  text-align: center;
-}
-
-.homePanel{}
-.homeCard{}
-
-/* Style the MusicCards */
-.musicCardRight {
-  padding: 1rem;
-  margin: 1rem;
-  border-width: 2px;
-  box-shadow: #555;
-  background-color: #3d405b;
-  text-align: right;
-  width:90%;
-  align-self: right;
-}
-.musicCardLeft {
-  padding: 1rem;
-  margin: 1rem;
-  border-width: 2px;
-  box-shadow: #555;
-  background-color: #3d405b;
-  text-align: left;
-  width: 90%;
-  align-self: left;
-}
-
-.musicPanel{}
-
-
-.videoCard{}
-
-.videoPanel{}
-
-
-.gamePanel{}
-
-.gameCard{}
-
-
-
-#Home {background-color: #373331;}
-#Music {background-color: #80ac7b;}
-#Videos {background-color: #0c9cee;}
-#Games {background-color: #f66b34;}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1" title="skippyzk.com">
+<script src="index.js"></script>
+<link rel="stylesheet" href="index.css">
 </head>
+
+
+<Header>
+  <nav>
+    <button class="tablink" onclick="openPage('Home', this, '#373331')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Music', this, '#80ac7b')">Music</button>
+    <button class="tablink" onclick="openPage('Videos', this, '#0c9cee')">Videos</button>
+    <button class="tablink" onclick="openPage('Games', this, '#f66b34')">Games</button>
+  </nav>
+</Header>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, '#373331')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('Music', this, '#80ac7b')">Music</button>
-<button class="tablink" onclick="openPage('Videos', this, '#0c9cee')">Videos</button>
-<button class="tablink" onclick="openPage('Games', this, '#f66b34')">Games</button>
 
+<!--Home Tab-->
 <div id="Home" class="tabcontent">
-  <div class=homePanel>
-  <h3>Home</h3>
-  <div class=homeCard>
-  <img src=https://user-images.githubusercontent.com/91739883/143778321-852dbc0f-e301-40d5-8ab2-15807dcdf4a9.jpg style="width:auto;height:60vh;align-items: center;">
+  <div class="homePanel">
+    <h1>Hello, my name is <span class="accent-text">Skippy!</h1>
+    <div class="homeCard">
+      <div class="imgbox">
+        <img class="center-fit" src='https://user-images.githubusercontent.com/91739883/143778321-852dbc0f-e301-40d5-8ab2-15807dcdf4a9.jpg'>
+      </div>
+    <div class="homeCard">
+      <h3>I am a:</h3>
+        <ul>
+          <li>Husband</li>
+          <li><a href="https://www.instagram.com/caramelthecavapoo/" target="_blank">Puppy Daddy</a></li>
+          <li>Gamer</li>
+          <li><a href="https://www.youtube.com/channel/UCeKE6NfyYdhva4PE-SHYhjQ" target="_blank">Youtuber</a></li>
+          <li>Game Master</li>
+          <li>Game Devleoper</li>
+          <li>Web Developer<br>(I made this page!)</li>
+          <li><a onclick="openPage('Music', this, '#80ac7b')" href="javascript:void(0)">Musician</a></li>
+          <li>and I work full time at a cannabis dispensary!</li>
+        </ul>
     </div>
+    <div class="homecard">
+      <h2>Most Recent</h2>
+        <p>I made a website for my new video game company <a href="https://hazywizardstudios.github.io/" target="_blank">Hazy Wizard Studios!</a> Check it out!</p>
     </div>
+    
+    </div>
+ </div>
 </div>
 
+
+<!--Music Tab-->
 <div id="Music" class="tabcontent">
   <div class=musicPanel>
-  <h3>Music</h3>
+  <h1>Music</h1>
 
   <div id="allMusicCards">
-  <!--Bandcamp Embeds-->
-  <!--Digital Heaven-->
-  <div class="musicCardLeft">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3706823200/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-heaven">Digital Heaven by nightsisters</a></iframe>
-  </div>
-  <!--Select Psychadelic Works-->
-  <div class="musicCardRight">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2178922091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/select-psychedelic-works">Select Psychedelic Works by nightsisters</a></iframe>
-  </div>
-  <!--Ghost Cave-->
-  <div class="musicCardLeft">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2600123265/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/ghost-cave">ghost cave by nightsisters</a></iframe>
-  </div>
-  <!--Funito-->
-  <div class="musicCardRight">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=423954299/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/funito">funito by nightsisters</a></iframe>
-  </div>
-  <!--Abstract Metaphysical Speculation-->
-  <div class="musicCardLeft">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1854805674/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/abstract-metaphysical-speculation">abstract metaphysical speculation by nightsisters</a></iframe>
-  </div>
-  <!--Digital Samurai-->
-  <div class="musicCardRight">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3100369233/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-samurai">digital samurai by nightsisters</a></iframe>
-  </div>
-  <!--Aroopayana-->
-  <div class="musicCardLeft">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3994672091/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/aroopayana">aroopayana by nightsisters</a></iframe>
-  </div>
-  <!--Phantom-->
-  <div class="musicCardRight">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=340712263/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/phantom">phantom by nightsisters</a></iframe>
-  </div>
-  <!--Lost Classics-->
-  <div class="musicCardLeft">
-  <iframe style="border: 0; max-width: 100%; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=814636353/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/lost-classics-2">lost classics by nightsisters</a></iframe>
-  </div>
-  </div>
-</div>
-
-</div>
-
-<div id="Videos" class="tabcontent">
-  <div class=videoPanel>
-    
-  <h1>Videos</h1>
-  <!--Youtube PLaylist Embeds-->
-  <!--Sleep Music-->
-  <div class=videoCard>
-  <iframe max-width="80%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Bandcamp Embeds-->
+      <!--Digital Heaven-->
+      <div class="musicCard left">
+        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3706823200/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-heaven" preload="auto">Digital Heaven by nightsisters</a></iframe>
+        <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Select Psychadelic Works-->
+      <div class="musicCard right">
+        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2178922091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/select-psychedelic-works">Select Psychedelic Works by nightsisters</a></iframe>
+        <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Ghost Cave-->
+      <div class="musicCard left">
+        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2600123265/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/ghost-cave">ghost cave by nightsisters</a></iframe>
+        <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Funito-->
+      <div class="musicCard right">
+       <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=423954299/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/funito">funito by nightsisters</a></iframe>
+       <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Abstract Metaphysical Speculation-->
+      <div class="musicCard left">
+       <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1854805674/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/abstract-metaphysical-speculation">abstract metaphysical speculation by nightsisters</a></iframe>
+       <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Digital Samurai-->
+      <div class="musicCard right">
+        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3100369233/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-samurai">digital samurai by nightsisters</a></iframe>
+        <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Aroopayana-->
+      <div class="musicCard left">
+        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3994672091/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/aroopayana">aroopayana by nightsisters</a></iframe>
+        <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Phantom-->
+      <div class="musicCard right">
+        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=340712263/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/phantom">phantom by nightsisters</a></iframe>
+        <p>Some Text about Lost Classics</p>
+      </div>
+    <!--Lost Classics-->
+      <div class="musicCard left">
+        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=814636353/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/lost-classics-2">lost classics by nightsisters</a></iframe>
+        <p>Some Text about Lost Classics</p>
+      </div>
     </div>
   </div>
 </div>
 
-<div id="Games" class="tabcontent">
-  <h1>Projects and Games</h1>
-  <div class=panel>
-    <div class=card>
-      <iframe width="80%" src=https://stone-skin-media.itch.io/spooky-investigation></iframe>
+
+<!--Videos Tab-->
+<div id="Videos" class="tabcontent">
+  <div class="videoPanel">
+    <h1>Videos</h1>
+    <!--Youtube PLaylist Embeds-->
+     <!--Sleep Music-->
+    <div class="videoCard">
+        <H2>Sleep Music Playlist</H2>
+        <iframe max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
-  
 </div>
 
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-   
+<!--Games Tab-->
+<div id="Games" class="tabcontent">
+  <div class="gamePanel">
+    <h1>Projects and Games</h1>
+    <div class="gameCard">
+        <a href=https://stone-skin-media.itch.io/spooky-investigation target="_blank">
+          <h2>Spooky Investigation</h2>
+        </a>
+        <div class="imgbox">
+          <img class="centerfit" src=https://img.itch.zone/aW1hZ2UvNTIxNTI5LzI3MDc2OTcucG5n/original/gF%2BATr.png>
+        </div>
+    </div>
+  </div>
+</div>
+  
 </body>
 </html> 
