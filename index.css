@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box;margin:0;padding:0;}
 
 @media screen {   
   /* Generic pane rules */
@@ -16,10 +16,10 @@
 }
 
 /*Tab Background Colors */
-#Home {background-color: #373331;}
-#Music {background-color: #80ac7b;}
-#Videos {background-color: #0c9cee;}
-#Games {background-color: #f66b34;}
+#Home {background-color: #059AD2;}
+#Music {background-color: #0C0926;}
+#Videos {background-color: #673B9C;}
+#Games {background-color: #04134F;}
 
 /* Style tab links */
 .tablink {
@@ -49,10 +49,10 @@
 
 /* Set height of body and the document to 100% */
 body, html {
-    height: fit-content;
     margin: 0;
     font-family: Arial;
     background-color: black;
+    color:#D8E5F1;
 }
 
 /* IMG styles */
@@ -72,33 +72,53 @@ img{
 }
 
 /*iframe*/
-iframe{max-width: 100%;}
+iframe{
+  max-width: 100%;
+  height:400px;
+  padding:0.1rem;
+  border-radius: 1rem;
+}
 
 /*Typography*/
+h1,h2,h3{padding:0.2rem}
 h1{font-size:2.5rem;margin:.2em;}
 h2{font-size:2rem;margin:.2em;}
 h3{font-size:1.5rem;margin:.2em;}
-p{
-    font-size: 1rem;
+p{font-size: 1rem;}
+a{
+  color:#F840F5;
 }
-a{}
-a:hover{}
+a:hover{
+  color:#FDC4FC;
+}
+.accentText{
+  color:#103F85;
+  font-size: 3rem;
+  ;
+}
 
-li{text-align: left;}
+li{display:inline-block;}
 
-ul{line-height: 1.2;}
+ul{line-height: 1.6;text-align: center;}
 
 /* Home Page Styles */
 .homePanel{
-    background-color:black;
+    background-color:#C8A590;
     width:100%;
-    max-height: ;
-    padding: .5em;
-    margin: auto;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 2rem;
+    border: 2px solid black;
 }
+
 .homeCard{
-    margin: 0 auto;
+    margin: 1rem auto;
+    padding: 1rem;
     max-width: 100%;
+    background-color: #103F85;
+    border-radius: 1rem;
+    max-width: 1440px;
+    border: 2px solid black;
 }
 
 /* Music Page Styles */
@@ -106,42 +126,76 @@ ul{line-height: 1.2;}
   padding: .5em;
   margin: 1em auto;
   border: none;
-  background-color: #3d405b;
+  background-color: #0C0926;
   width:90%;
+  border-radius: 1rem;
+  color:#059AD2;
+  border: 2px solid #F63EF2;
+}
+
+.musicCard h3{
+  border-bottom: 2px solid #F63EF2;
+  width:fit-content;
 }
 
 .left{text-align: left;}
+.left p{text-align: right;}
 
 .right{text-align: right;}
+.right p{text-align: left;}
 
 .musicPanel{
-    background-color:black;
+    background-color:#673B9C;
     width:100%;
     padding: .5em;
     margin: auto;
+    border-radius: 2rem;
+    color:#0C0926;
+    border: 2px solid black;
 }
 
 
 /*Video Page Styles */
+
 .videoCard{
+  padding:1rem;
+  margin:1rem auto;
+  border-radius: 1rem;
+  background-color:#FFC0FF;
+  border: 2px solid black;
+  color:black;
+  
 }
 
 .videoPanel{
-    background-color:black;
+    background-color:#586BC7;
     width:100%;
     padding: .5em;
     margin: auto;
+    border-radius: 2rem;
+    border: 2px solid black;
 }
 
 /*Game Page Styles */
 .gamePanel{
-    background-color:black;
+    background-color:#3A2B3B;
     width:100%;
     padding: .5em;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 2rem;
+    border: 2px solid black;
 }
 
-.gameCard{}
+.gameCard{
+  background-color:#0C0926;
+  max-width: fit-content;
+  margin:1rem auto;
+  padding:1rem;
+  border-radius: 1rem;
+}
 
 /*
 IDs

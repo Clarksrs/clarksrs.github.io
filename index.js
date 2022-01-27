@@ -11,7 +11,9 @@ function openPage(pageName,elmnt,color) {
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
-  }
+  };
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+window.addEventListener("load", function(){
+  this.document.getElementById("defaultOpen").click();
+});
