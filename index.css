@@ -1,7 +1,32 @@
-* {box-sizing: border-box;margin:0;padding:0;}
+/*Font Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fira+Code:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Major+Mono+Display&family=Nanum+Gothic+Coding:wght@400;700&family=Oxygen+Mono&family=PT+Mono&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne+Mono&family=VT323&display=swap');
+
+/*Fonts*/
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Courier Prime', monospace;
+font-family: 'Cousine', monospace;
+font-family: 'Cutive Mono', monospace;
+font-family: 'DM Mono', monospace;
+font-family: 'Fira Code', monospace;
+font-family: 'Fira Mono', monospace;
+font-family: 'Inconsolata', monospace;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Oxygen Mono', monospace;
+font-family: 'PT Mono', monospace;
+font-family: 'Red Hat Mono', monospace;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Space Mono', monospace;
+font-family: 'Syne Mono', monospace;
+font-family: 'VT323', monospace;
+
+*{box-sizing: border-box;margin:0;padding:0;}
 
 @media screen {   
   /* Generic pane rules */
+  *{box-sizing: border-box;}
   .row, .col { overflow: hidden; position: absolute; }
   .row { left: 0; right: 0; }
   .col { top: 0; bottom: 0; }
@@ -49,6 +74,7 @@
 
 /* Set height of body and the document to 100% */
 body, html {
+
     margin: 0;
     font-family: Arial;
     background-color: black;
@@ -59,6 +85,8 @@ body, html {
 img{
     max-width: 100%;
     max-height: 100%;
+    border-radius: 1rem;
+    border: 1px solid black;
 }
 
 .imgbox {
@@ -80,11 +108,11 @@ iframe{
 }
 
 /*Typography*/
-h1,h2,h3{padding:0.2rem}
+h1,h2,h3{padding:0.2rem;font-family: 'Fira Code', monospace;}
 h1{font-size:2.5rem;margin:.2em;}
 h2{font-size:2rem;margin:.2em;}
 h3{font-size:1.5rem;margin:.2em;}
-p{font-size: 1rem;}
+p{font-size: 1rem;line-height: 1.25;}
 a{
   color:#F840F5;
 }
@@ -94,12 +122,11 @@ a:hover{
 .accentText{
   color:#103F85;
   font-size: 3rem;
-  ;
 }
 
-li{display:inline-block;}
+nav li{display:inline-block;}
 
-ul{line-height: 1.6;text-align: center;}
+nav ul{line-height: 1.6;text-align: center;}
 
 /* Home Page Styles */
 .homePanel{
@@ -131,6 +158,7 @@ ul{line-height: 1.6;text-align: center;}
   border-radius: 1rem;
   color:#059AD2;
   border: 2px solid #F63EF2;
+  display:flex;
 }
 
 .musicCard h3{
@@ -138,11 +166,17 @@ ul{line-height: 1.6;text-align: center;}
   width:fit-content;
 }
 
+.musicCard ol{
+  list-style:;
+}
+
 .left{text-align: left;}
 .left p{text-align: right;}
+.left ol{text-align: right;}
 
 .right{text-align: right;}
 .right p{text-align: left;}
+.right ol{text-align: right;}
 
 .musicPanel{
     background-color:#673B9C;
@@ -197,7 +231,26 @@ ul{line-height: 1.6;text-align: center;}
   border-radius: 1rem;
 }
 
-/*
-IDs
-*/
+@media screen and (max-width:375px) and (orientation:portrait) {
+  .musicCard{
+    display:block;
+  }
 
+  h1{
+    font-size: 1.5rem;
+  }
+
+  /* Generic pane rules */
+  .row, .col { overflow: hidden; position: absolute; }
+  .row { left: 0; right: 0; }
+  .col { top: 0; bottom: 0; }
+  .scroll-x { overflow-x: auto; }
+  .scroll-y { overflow-y: auto; }
+
+  .header.row { height: 75px; top: 0; }
+  .body.row { top: 75px; bottom: 50px; }
+  .footer.row { height: 50px; bottom: 0; }
+  
+  /* end of screen rules. */ 
+
+}
