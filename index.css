@@ -7,17 +7,10 @@ font-family: 'Courier Prime', monospace;
 font-family: 'Cousine', monospace;
 font-family: 'Cutive Mono', monospace;
 font-family: 'DM Mono', monospace;
-font-family: 'Fira Code', monospace;
-font-family: 'Fira Mono', monospace;
 font-family: 'Inconsolata', monospace;
-font-family: 'JetBrains Mono', monospace;
 font-family: 'Major Mono Display', monospace;
 font-family: 'Nanum Gothic Coding', monospace;
-font-family: 'Oxygen Mono', monospace;
-font-family: 'PT Mono', monospace;
-font-family: 'Red Hat Mono', monospace;
 font-family: 'Roboto Mono', monospace;
-font-family: 'Share Tech Mono', monospace;
 font-family: 'Space Mono', monospace;
 font-family: 'Syne Mono', monospace;
 font-family: 'VT323', monospace;
@@ -26,7 +19,7 @@ font-family: 'VT323', monospace;
 
 @media screen {   
   /* Generic pane rules */
-  *{box-sizing: border-box;}
+  *{box-sizing: border-box;margin:0;}
   .row, .col { overflow: hidden; position: absolute; }
   .row { left: 0; right: 0; }
   .col { top: 0; bottom: 0; }
@@ -74,9 +67,8 @@ font-family: 'VT323', monospace;
 
 /* Set height of body and the document to 100% */
 body, html {
-
     margin: 0;
-    font-family: Arial;
+    font-family: 'Anonymous Pro', monospace;
     background-color: black;
     color:#D8E5F1;
 }
@@ -108,7 +100,7 @@ iframe{
 }
 
 /*Typography*/
-h1,h2,h3{padding:0.2rem;font-family: 'Fira Code', monospace;}
+h1,h2,h3{padding:0.2rem;font-family: 'Inconsolata', monospace;}
 h1{font-size:2.5rem;margin:.2em;}
 h2{font-size:2rem;margin:.2em;}
 h3{font-size:1.5rem;margin:.2em;}
@@ -136,6 +128,12 @@ nav ul{line-height: 1.6;text-align: center;}
     margin: 0;
     border-radius: 2rem;
     border: 2px solid black;
+}
+
+.homePanel ul{
+  list-style: none;
+  margin:0;
+  padding:0;
 }
 
 .homeCard{
@@ -233,7 +231,7 @@ nav ul{line-height: 1.6;text-align: center;}
 
 @media screen and (max-width:375px) and (orientation:portrait) {
   .musicCard{
-    display:block;
+    display:inline-block;
   }
 
   h1{
