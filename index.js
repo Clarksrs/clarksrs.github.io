@@ -26,6 +26,19 @@ new Twitch.Embed("twitch-embed", {
   parent: ["https://clarksrs.github.io/", "https://pages.github.io/"]
 });
 
+var options = {
+  width: 360,
+  height: 240,
+  channel: skippyzk,
+  video: "",
+  collection: "",
+  // only needed if your site is also embedded on embed.example.com and othersite.example.com
+  parent: ["clarksrs.github.io/", "pages.github.io/"]
+};
+
+var player = new Twitch.Player("<player div ID>", options);
+player.setVolume(0.5);
+
 embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
   var player = embed.getPlayer();
   player.play();
