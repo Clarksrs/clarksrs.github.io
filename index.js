@@ -17,3 +17,16 @@ function openPage(pageName,elmnt,color) {
 window.addEventListener("load", function(){
   this.document.getElementById("defaultOpen").click();
 });
+
+new Twitch.Embed("twitch-embed", {
+  width: 360,
+  height: 240,
+  channel: "skippyzk",
+  // Only needed if this page is going to be embedded on other websites
+  parent: ["https://clarksrs.github.io/", "https://pages.github.io/"]
+});
+
+embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+  var player = embed.getPlayer();
+  player.play();
+});
