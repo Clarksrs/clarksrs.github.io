@@ -37,7 +37,7 @@ font-family: 'VT323', monospace;
 #Home {background-color: #059AD2;}
 #Music {background-color: #0C0926;}
 #Videos {background-color: #673B9C;}
-#Games {background-color: #04134F;}
+#Projects {background-color: #04134F;}
 
 /* Style tab links */
 .tablink {
@@ -182,10 +182,19 @@ nav ul{line-height: 1.6;text-align: center;}
     padding: .5em;
     margin: auto;
     border-radius: 2rem;
-    color:#0C0926;
+    color:white;
     border: 2px solid black;
 }
 
+#allMusicCards ol li{
+  color:#FEFAEB;
+  font-weight: bold;
+}
+
+#allMusicCards ul li{
+  color:#73BF7F;
+  font-weight: normal;
+}
 
 /*Video Page Styles */
 
@@ -208,8 +217,8 @@ nav ul{line-height: 1.6;text-align: center;}
     border: 2px solid black;
 }
 
-/*Game Page Styles */
-.gamePanel{
+/*Project Page Styles */
+.projectPanel{
     background-color:#3A2B3B;
     width:100%;
     padding: .5em;
@@ -221,7 +230,7 @@ nav ul{line-height: 1.6;text-align: center;}
     border: 2px solid black;
 }
 
-.gameCard{
+.projectCard{
   background-color:#0C0926;
   max-width: fit-content;
   margin:1rem auto;
