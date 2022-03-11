@@ -1,4 +1,4 @@
-//tabFunction
+//tab Functions
 function openPage(pageName,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,16 +13,11 @@ function openPage(pageName,elmnt,color) {
     elmnt.style.backgroundColor = color;
   };
 
-// Get the element with id="defaultOpen" and click on it
-window.addEventListener("load", function(){
-  this.document.getElementById("defaultOpen").click();
-});
-
+//Twitch Embed
 new Twitch.Embed("twitch-embed", {
   width: 360,
   height: 240,
   channel: "skippyzk",
-  // Only needed if this page is going to be embedded on other websites
   parent: ["https://clarksrs.github.io/", "https://pages.github.io/"]
 });
 
@@ -32,14 +27,25 @@ var options = {
   channel: skippyzk,
   video: "",
   collection: "",
-  // only needed if your site is also embedded on embed.example.com and othersite.example.com
   parent: ["clarksrs.github.io/", "pages.github.io/"]
 };
 
-var player = new Twitch.Player("<player div ID>", options);
-player.setVolume(0.5);
+//Toggle Music Track Descriptions
+function toggleDescription(trackID){
+  document.getElementById(`'"'${trackID}'"'`).toggle();
+  console.log("Change Attempted");
+}
 
-embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-  var player = embed.getPlayer();
-  player.play();
+// Get the element with id="defaultOpen" and click on it
+window.addEventListener("load", function(){
+  this.document.getElementById("defaultOpen").click();
 });
+
+function toggleDisplay(elemId) {
+  var x = document.getElementById(elemId);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

@@ -157,15 +157,29 @@ nav ul{line-height: 1.6;text-align: center;}
   color:#059AD2;
   border: 2px solid #F63EF2;
   display:flex;
+  justify-content: center; 
+  align-content: center;
 }
+
+.musicCardHead{
+  width:50%;
+}
+
 
 .musicCard h3{
   border-bottom: 2px solid #F63EF2;
   width:fit-content;
 }
 
-.musicCard ol{
-  list-style:;
+.musicCard ol li{cursor: pointer;}
+.musicCard ol li:hover{color:#F3F}
+.musicCard ol li:active{color:#FaF}
+
+.albumDesciption{max-width: 50%;}
+
+.tracklist{max-width: 50%;}
+.trackDescription{
+  display:none;
 }
 
 .left{text-align: left;}
@@ -186,12 +200,13 @@ nav ul{line-height: 1.6;text-align: center;}
     border: 2px solid black;
 }
 
-#allMusicCards ol li{
+.musicPanel ol li{
   color:#FEFAEB;
   font-weight: bold;
+  line-height: 1.4;
 }
 
-#allMusicCards ul li{
+.musicPanel ul li{
   color:#73BF7F;
   font-weight: normal;
 }
@@ -253,11 +268,9 @@ nav ul{line-height: 1.6;text-align: center;}
   .col { top: 0; bottom: 0; }
   .scroll-x { overflow-x: auto; }
   .scroll-y { overflow-y: auto; }
-
   .header.row { height: 75px; top: 0; }
   .body.row { top: 75px; bottom: 50px; }
-  .footer.row { height: 50px; bottom: 0; }
-  
+  .footer.row { height: 50px; bottom: 0; }  
   /* end of screen rules. */ 
 
 }

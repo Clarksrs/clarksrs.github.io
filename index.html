@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skippyzk.com</title>
   <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 
@@ -73,80 +74,196 @@
 <div id="Music" class="tabcontent">
   <div class=musicPanel>
   <h1>Music</h1>
+  <p>click on track names for description</p>
 
-  <div id="allMusicCards">
-    <!--Bandcamp Embeds-->
-      <!--Digital Heaven-->
+<!--Bandcamp Embeds-->
+   
+<!--Digital Heaven-->
       <div class="musicCard left">
+
         <div class="musicCardHead">
            <h3 class="albumTitle">Digital Heaven</h3>
            <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3706823200/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-heaven" preload="auto">Digital Heaven by nightsisters</a></iframe>
         </div>
+
         <div class="musicCardBody">
           <p class="albumDesciption">Having all the tools to create the music I want is divine bliss. Many people seek happiness in nature, but I have found peace in a blend of the natural and digital realms.</p>
-          <ol>
-            <li>Exiting the Atmospehere<ul><li>This track is design to help ease you in to the more intense experiences to come</li></ul></li>
-            <li>Implied Lunacy<ul><li>A fun song for dancing. Is it crazy to spend our time on such things? This song is heavily influenced by Virtual Insanity from Jamiroquai. It's a crazy world we're living in.</li></ul></li>
-            <li>Run Away And Join The Circus<ul><li>This song really came about because I wanted to make a song with tuba. It's such a great sound. It replaces bass amazingly. Then there's drums lead and chords. Pretty standard really.</li></ul></li>
-            <li>Low Gravity<ul><li>I've been playing lots of sci-fi First Person Shooters. There's always hundreds or thousands of other soldiers but only you can stop the evil invading aliendemons.</li></ul></li>
-            <li>Extended Conflict<ul><li>I want to make a heavy song with pretty parts, but this song also repsents cycles of not just war, but all conflict. Is it human nature?</li></ul></li>
-            <li>Continue?<ul><li>When you play a video game, you can't ever fail permanently. The only choice you have is whether you want to continue or not.</li></ul></li>
-            <li>First-Class Villain<ul><li>This track is about an evil person who still does good things sometimes and is respected. Probably the best song I've made.</li></ul></li>
-            <li>Showdown Between Swordsmen<ul><li>It's a duel so it's gotta kinda sound like awestern, right?</li></ul></li>
-            <li>Racing Through The Junkyard<ul><li>This might be the highest bpm track I've ever made. It's a rip-off of a song from Chrono Trigger.</li></ul></li>
-            <li>Recreation (Occasional Acid Flashback)<ul><li>Big Lebowski is my favorite Non-Star Wars movie. I made it before the pandemic and didn't know coughing sounds would end up triggering people so much. Aside from the drums it's all just samples from the movie.</li></ul></li>
+          <ol class="tracklist">
+            <li onclick="javascript:toggleDisplay('dh1')">Exiting the Atmospehere<ul><li class="trackDescription" id="dh1">This track is design to help ease you in to the more intense experiences to come</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh2')">Implied Lunacy<ul><li class="trackDescription" id="dh2">A fun song for dancing. Is it crazy to spend our time on such things? This song is heavily influenced by Virtual Insanity from Jamiroquai. It's a crazy world we're living in.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh3')">Run Away And Join The Circus<ul><li class="trackDescription" id="dh3">This song really came about because I wanted to make a song with tuba. It's such a great sound. It replaces bass amazingly. Then there's drums lead and chords. Pretty standard really.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh4')">Low Gravity<ul><li class="trackDescription" id="dh4">I've been playing lots of sci-fi First Person Shooters. There's always hundreds or thousands of other soldiers but only you can stop the evil invading aliendemons.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh5')">Extended Conflict<ul><li class="trackDescription" id="dh5">I want to make a heavy song with pretty parts, but this song also repsents cycles of not just war, but all conflict. Is it human nature?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh6')">Continue?<ul><li class="trackDescription" id="dh6">When you play a video game, you can't ever fail permanently. The only choice you have is whether you want to continue or not.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh7')">First-Class Villain<ul><li class="trackDescription" id="dh7">This track is about an evil person who still does good things sometimes and is respected. Probably the best song I've made.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh8')">Showdown Between Swordsmen<ul><li class="trackDescription" id="dh8">It's a duel so it's gotta kinda sound like awestern, right?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh9')">Racing Through The Junkyard<ul><li class="trackDescription" id="dh9">This might be the highest bpm track I've ever made. It's a rip-off of a song from Chrono Trigger.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh10')">Recreation (Occasional Acid Flashback)<ul><li class="trackDescription" id="dh10">Big Lebowski is my favorite Non-Star Wars movie. I made it before the pandemic and didn't know coughing sounds would end up triggering people so much. Aside from the drums it's all just samples from the movie.</li></ul></li>
           </ol>
         </div>
+
       </div>
-    <!--Select Psychadelic Works-->
-      <div class="musicCard right">
-        <h3>Select Psychadelic Works</h3>
-        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2178922091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/select-psychedelic-works">Select Psychedelic Works by nightsisters</a></iframe>
-        <p>Some Text</p>
+
+<!--Select Psychadelic Works-->
+    <div class="musicCard right">
+
+      <div class="musicCardHead">
+        <h3 class="albumTitle">Select Psychadelic Works</h3>
+        <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2178922091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/select-psychedelic-works">Select Psychedelic Works by nightsisters</a></iframe>
       </div>
-    <!--Ghost Cave-->
-      <div class="musicCard left">
-        <h3>Ghost Cave</h3>
-        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2600123265/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/ghost-cave">ghost cave by nightsisters</a></iframe>
-        <p>Some Text about Lost Classics</p>
+        
+      <div class="musicCardBody">
+        <p class="albumDesciption">Having all the tools to create the music I want is divine bliss. Many people seek happiness in nature, but I have found peace in a blend of the natural and digital realms.</p>
+        <ol class="tracklist">
+           <li onclick="javascript:toggleDisplay('spw1')">305<ul><li class="trackDescription" id="spw1">This song is about having hope and moving forward in a universe that is cold and meaningless.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw2')">Mono Sodee Umgloo Timate<ul><li class="trackDescription" id="spw2">This song is an experiemnt itself. There's only actually one town playing, but it bounces back and forth really fast using a tremelo. It causes a strange chorus-y harmonic effect. You can almost hear different tones when the rate of the panning changes, but it's just an illusion.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw3')">Smiling Cat with Glasses<ul><li class="trackDescription" id="spw3">This song is the result of experiments. I loaded the finished song onto my phone and used edjing to slow it down. The synths sound different, the sounds get stretched out not just pitched down. I also tried fast drums that become somewhat normal speed.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw4')">Observation Deck<ul><li class="trackDescription" id="spw4">There's so many beautiful things around us all the time. We should learn to appreciate those, then we would be happier.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw5')">Black Oil<ul><li class="trackDescription" id="spw5">Play this in your car at full volume. This is kinda just like a Polish Ambassador song, but heavy.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw6')">Digital Samurai<ul><li class="trackDescription" id="spw6">I've lost count of the number of demons I've slain with a katana.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw7')">Innumerable Ghosts<ul><li class="trackDescription" id="spw7">There's a version on youtube with Alan Watts speaking. Many things around use aren't what we actually think and say they are.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw8')">There's No Difference Between Sinner and Sin<ul><li class="trackDescription" id="spw8">If you sin, you become a sinner. This is what it sounds like when I try to rip off NIN.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw9')">Chewing My Ears Off<ul><li class="trackDescription" id="spw9">This song is about turning away from a growing frustration.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw10')">Diamond Rain<ul><li class="trackDescription" id="spw10">It literally rains diamonds on other planets. Isn't that so pretty? It would be deadly too.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw11')">No Samsara Here<ul><li class="trackDescription" id="spw11">Nirvana.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw12')">Nodebeat<ul><li class="trackDescription" id="spw12">Nodebeat is a cool app for smartphones!</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw13')">Feathers<ul><li class="trackDescription" id="spw13">I actually recorded this with drums and a guitar and microphones and everything and no synths.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw14')">IG88<ul><li class="trackDescription" id="spw14">A themesong for a Jedi killer.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw15')">I Command You to Kill<ul><li class="trackDescription" id="spw15">To kill just for the thrill. Because innocent blood must spill. It's the desire of my will.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw16')">Overworld<ul><li class="trackDescription" id="spw16">A kinda old-school video game-y type of song.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw17')">Dantooine<ul><li class="trackDescription" id="spw17">I recorded the audio while palying star wars galaxies. I doubled the audio, panned each track hard left and right, and then moved the right channel forward a few seconds. It's mostly the rain sound(I was on Dantooine), my speederbike and some droid sounds.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw18')">Log Drums<ul><li class="trackDescription" id="spw18">An old song, lots of decisions I find quesitonable now.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw19')">Spacecraft<ul><li class="trackDescription" id="spw19">Out of fuel, you drift between planets. Your only hope is that a trading caravan finds you before you run out of food.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw20')">Toxic Parasite<ul><li class="trackDescription" id="spw20">A theme for a video game monster.</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw21')">400v<ul><li class="trackDescription" id="spw21">Raw 80s POWER!</li></ul></li>
+           <li onclick="javascript:toggleDisplay('spw22')">Ethereal Forrest<ul><li class="trackDescription" id="spw22">A magical and enchanting place</li></ul></li>
+        </ol>
       </div>
-    <!--Funito-->
-      <div class="musicCard right">
-        <h3>Funito</h3>
-       <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=423954299/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/funito">funito by nightsisters</a></iframe>
-       <p>Some Text about Lost Classics</p>
-      </div>
-    <!--Abstract Metaphysical Speculation-->
-      <div class="musicCard left">
-        <h3>Abstract Metaphysical Speculation</h3>
-       <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1854805674/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/abstract-metaphysical-speculation">abstract metaphysical speculation by nightsisters</a></iframe>
-       <p>Some Text about Lost Classics</p>
-      </div>
-    <!--Digital Samurai-->
-      <div class="musicCard right">
-        <h3>Digital Samurai</h3>
-        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3100369233/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-samurai">digital samurai by nightsisters</a></iframe>
-        <p>Some Text about Lost Classics</p>
-      </div>
-    <!--Aroopayana-->
-      <div class="musicCard left">
-        <h3>Aroopayana</h3>
-        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3994672091/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/aroopayana">aroopayana by nightsisters</a></iframe>
-        <p>Some Text about Lost Classics</p>
-      </div>
-    <!--Phantom-->
-      <div class="musicCard right">
-        <h3>Phantom</h3>
-        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=340712263/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/phantom">phantom by nightsisters</a></iframe>
-        <p>Some Text about Lost Classics</p>
-      </div>
-    <!--Lost Classics-->
-      <div class="musicCard left">
-        <h3>Lost Classics</h3>
-        <iframe style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=814636353/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/lost-classics-2">lost classics by nightsisters</a></iframe>
-        <p>Some Text about Lost Classics</p>
-      </div>
+
     </div>
+
+<!--Ghost Cave-->
+    <div class="musicCard left">
+
+      <div class="musicCardHead">
+        <h3>Ghost Cave</h3>
+        <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2600123265/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/ghost-cave">ghost cave by nightsisters</a></iframe>
+      </div>
+
+      <div class="musicCardBody">
+        <p class="albumDesciption">Having all the tools to create the music I want is divine bliss. Many people seek happiness in nature, but I have found peace in a blend of the natural and digital realms.</p>
+          <ol class="tracklist">
+            <li onclick="javascript:toggleDisplay('gc1')">Dantooine<ul><li class="trackDescription" id="gc1">This track is design to help ease you in to the more intense experiences to come</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc2')">nar shaddaa<ul><li class="trackDescription" id="gc2">A fun song for dancing. Is it crazy to spend our time on such things? This song is heavily influenced by Virtual Insanity from Jamiroquai. It's a crazy world we're living in.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc3')">a14<ul><li class="trackDescription" id="gc3">This song really came about because I wanted to make a song with tuba. It's such a great sound. It replaces bass amazingly. Then there's drums lead and chords. Pretty standard really.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc4')">starfighter<ul><li class="trackDescription" id="gc4">I've been playing lots of sci-fi First Person Shooters. There's always hundreds or thousands of other soldiers but only you can stop the evil invading aliendemons.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc5')">most perfect sound 最も最適の音<ul><li class="trackDescription" id="gc5">I want to make a heavy song with pretty parts, but this song also repsents cycles of not just war, but all conflict. Is it human nature?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc6')">it's all dark really<ul><li class="trackDescription" id="gc6">When you play a video game, you can't ever fail permanently. The only choice you have is whether you want to continue or not.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc7')">i miss you<ul><li class="trackDescription" id="gc7">This track is about an evil person who still does good things sometimes and is respected. Probably the best song I've made.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc8')">Showdown Between Swordsmen<ul><li class="trackDescription" id="gc8">It's a duel so it's gotta kinda sound like awestern, right?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc9')">Racing Through The Junkyard<ul><li class="trackDescription" id="gc9">This might be the highest bpm track I've ever made. It's a rip-off of a song from Chrono Trigger.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('gc10')">Recreation (Occasional Acid Flashback)<ul><li class="trackDescription" id="gc10">Big Lebowski is my favorite Non-Star Wars movie. I made it before the pandemic and didn't know coughing sounds would end up triggering people so much. Aside from the drums it's all just samples from the movie.</li></ul></li>
+          </ol>
+      </div>
+
+    </div>
+
+<!--Funito-->
+    <div class="musicCard right">
+
+        <div class="musicCardHead">
+          <h3>Funito</h3>
+          <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=423954299/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/funito">funito by nightsisters</a></iframe>
+        </div>
+      
+      <div class="musicCardBody">
+        <p class="albumDesciption">Having all the tools to create the music I want is divine bliss. Many people seek happiness in nature, but I have found peace in a blend of the natural and digital realms.</p>
+          <ol class="tracklist">
+            <li onclick="javascript:toggleDisplay('dh1')">Exiting the Atmospehere<ul><li class="trackDescription" id="dh1">This track is design to help ease you in to the more intense experiences to come</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Implied Lunacy<ul><li class="trackDescription" id="dh2">A fun song for dancing. Is it crazy to spend our time on such things? This song is heavily influenced by Virtual Insanity from Jamiroquai. It's a crazy world we're living in.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Run Away And Join The Circus<ul><li class="trackDescription" id="dh3">This song really came about because I wanted to make a song with tuba. It's such a great sound. It replaces bass amazingly. Then there's drums lead and chords. Pretty standard really.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Low Gravity<ul><li class="trackDescription" id="dh4">I've been playing lots of sci-fi First Person Shooters. There's always hundreds or thousands of other soldiers but only you can stop the evil invading aliendemons.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Extended Conflict<ul><li class="trackDescription" id="dh5">I want to make a heavy song with pretty parts, but this song also repsents cycles of not just war, but all conflict. Is it human nature?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Continue?<ul><li class="trackDescription" id="dh6">When you play a video game, you can't ever fail permanently. The only choice you have is whether you want to continue or not.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">First-Class Villain<ul><li class="trackDescription" id="dh1">This track is about an evil person who still does good things sometimes and is respected. Probably the best song I've made.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Showdown Between Swordsmen<ul><li class="trackDescription" id="dh1">It's a duel so it's gotta kinda sound like awestern, right?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Racing Through The Junkyard<ul><li class="trackDescription" id="dh1">This might be the highest bpm track I've ever made. It's a rip-off of a song from Chrono Trigger.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Recreation (Occasional Acid Flashback)<ul><li class="trackDescription" id="dh1">Big Lebowski is my favorite Non-Star Wars movie. I made it before the pandemic and didn't know coughing sounds would end up triggering people so much. Aside from the drums it's all just samples from the movie.</li></ul></li>
+          </ol>
+      </div>
+
+    </div>
+
+<!--Abstract Metaphysical Speculation-->
+  <div class="musicCard left">
+
+    <div class="musicCardHead">
+        <h3>Abstract Metaphysical Speculation</h3>
+       <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1854805674/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/abstract-metaphysical-speculation">abstract metaphysical speculation by nightsisters</a></iframe>
+    </div>
+
+    <div class="musicCardBody">
+       <p class="albumDesciption">Having all the tools to create the music I want is divine bliss. Many people seek happiness in nature, but I have found peace in a blend of the natural and digital realms.</p>
+          <ol class="tracklist">
+            <li onclick="javascript:toggleDisplay('dh1')">Exiting the Atmospehere<ul><li class="trackDescription" id="dh1">This track is design to help ease you in to the more intense experiences to come</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Implied Lunacy<ul><li class="trackDescription" id="dh2">A fun song for dancing. Is it crazy to spend our time on such things? This song is heavily influenced by Virtual Insanity from Jamiroquai. It's a crazy world we're living in.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Run Away And Join The Circus<ul><li class="trackDescription" id="dh3">This song really came about because I wanted to make a song with tuba. It's such a great sound. It replaces bass amazingly. Then there's drums lead and chords. Pretty standard really.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Low Gravity<ul><li class="trackDescription" id="dh4">I've been playing lots of sci-fi First Person Shooters. There's always hundreds or thousands of other soldiers but only you can stop the evil invading aliendemons.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Extended Conflict<ul><li class="trackDescription" id="dh5">I want to make a heavy song with pretty parts, but this song also repsents cycles of not just war, but all conflict. Is it human nature?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Continue?<ul><li class="trackDescription" id="dh6">When you play a video game, you can't ever fail permanently. The only choice you have is whether you want to continue or not.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">First-Class Villain<ul><li class="trackDescription" id="dh1">This track is about an evil person who still does good things sometimes and is respected. Probably the best song I've made.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Showdown Between Swordsmen<ul><li class="trackDescription" id="dh1">It's a duel so it's gotta kinda sound like awestern, right?</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Racing Through The Junkyard<ul><li class="trackDescription" id="dh1">This might be the highest bpm track I've ever made. It's a rip-off of a song from Chrono Trigger.</li></ul></li>
+            <li onclick="javascript:toggleDisplay('dh1')">Recreation (Occasional Acid Flashback)<ul><li class="trackDescription" id="dh1">Big Lebowski is my favorite Non-Star Wars movie. I made it before the pandemic and didn't know coughing sounds would end up triggering people so much. Aside from the drums it's all just samples from the movie.</li></ul></li>
+          </ol>
+     </div>
+
+  </div>
+
+<!--Digital Samurai-->
+  <div class="musicCard right">
+
+    <div class="musicCardHead">
+      <h3>Digital Samurai</h3>
+      <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3100369233/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/digital-samurai">digital samurai by nightsisters</a></iframe>
+    </div>
+
+    <div class="musicCardBody">
+      <p>Some Text about Lost Classics</p>
+    </div>
+
+  </div>
+
+<!--Aroopayana-->
+  <div class="musicCard left">
+
+    <div class="musicCardHead">
+        <h3>Aroopayana</h3>
+        <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3994672091/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/aroopayana">aroopayana by nightsisters</a></iframe>
+    </div>
+
+        <p>Some Text about Lost Classics</p>
+
+  </div>
+
+<!--Phantom-->
+  <div class="musicCard right">
+
+        <h3>Phantom</h3>
+        <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=340712263/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/phantom">phantom by nightsisters</a></iframe>
+       
+        <p>Some Text about Lost Classics</p>
+
+  </div>
+
+<!--Lost Classics-->
+  <div class="musicCard left">
+        
+        <h3>Lost Classics</h3>
+        <iframe class="bandcampEmbed" style="border: 0; max-width: 100%; min-height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=814636353/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/transparent=true/" seamless><a href="https://nightsisters.bandcamp.com/album/lost-classics-2">lost classics by nightsisters</a></iframe>
+        
+        <p>Some Text about Lost Classics</p>
+
   </div>
 </div>
 
@@ -154,41 +271,39 @@
 <div id="Videos" class="tabcontent">
   <div class="videoPanel">
 
-    <h1>Videos</h1>
-
-    <!--Youtube PLaylist Embeds-->
+    <h1>Videos</h1>    
      
     <div class="videoCard">
         <H2>Sleep Music Playlist</H2>
-        <iframe max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="youtubeEmbed" max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIhA1jsClQj1gU-oNLmPfQ4f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 
     <div class="videoCard">
       <H2>Music Videos</H2>
-      <iframe max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLfY6I_kBbdgFQAZAX1fQjCXeWIyqnIBT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  class="youtubeEmbed" max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLfY6I_kBbdgFQAZAX1fQjCXeWIyqnIBT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 
     <div class="videoCard">
       <H2>Music Related</H2>
-      <iframe max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIjPy8njo2ryC98fh51XDnFh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  class="youtubeEmbed" max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIjPy8njo2ryC98fh51XDnFh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 
     <div class="videoCard">
       <H2>Cannabis Videos</H2>
-      <iframe max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIi9UR2fe5QxK6l0ejLou0Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  class="youtubeEmbed" max-width="98%" src="https://www.youtube.com/embed/videoseries?list=PLcd7R5dO0wIi9UR2fe5QxK6l0ejLou0Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="videoCard">
       <H2>Stock Market</H2>
-      <iframe max-width="98%" src="https://youtube.com/playlist?list=PLcd7R5dO0wIh639vouJaHZMroidTYEdd-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  class="youtubeEmbed" max-width="98%" src="https://youtube.com/embed/videoseries?list=PLcd7R5dO0wIh639vouJaHZMroidTYEdd-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="videoCard">
       <H2>Mirror Image Podcast</H2>
-      <iframe max-width="98%" src="https://youtube.com/playlist?list=PLcd7R5dO0wIh6Odz1m8TF3ZVX84iOF0MP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  class="youtubeEmbed" max-width="98%" src="https://youtube.com/embed/videoseries?list=PLcd7R5dO0wIh6Odz1m8TF3ZVX84iOF0MP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 
