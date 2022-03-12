@@ -16,33 +16,38 @@ font-family: 'VT323', monospace;
 
 body{
     background-color: black;
+    display:flex;
+    flex-direction: column;
 }
+
+header{justify-self: flex-start;}
+footer{justify-self: flex-end;}
 
 .card{
     background-color:grey;
-    padding:.5rem;
-    margin:.5rem;
+    padding:.2rem;
+    margin:.2rem;
     max-height:50%;
 }
 
 h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 h3{
     text-align: center;
     font-size: 2.2rem;
-    padding:.5rem;
-    margin: 1rem auto;
+    padding:.2rem;
+    margin: .2rem auto;
 }
 
 p{
     text-align: center;
-    font-size: 2rem;
-    padding:.5rem;
+    font-size: 1.5rem;
+    padding:.2rem;
     padding-top:0;
-    margin: 1rem auto;
+    margin: .2rem auto;
 }
 
 ul{
@@ -63,7 +68,7 @@ ul li{
     background-color: green;
     text-align: center;
     padding:.5rem;
-    margin: 2rem auto;
+    margin: .8rem auto;
     font-size: 2rem;
     border:none;
     cursor: pointer;

@@ -34,12 +34,8 @@ var options = {
 function toggleDescription(trackID){
   document.getElementById(`'"'${trackID}'"'`).toggle();
   console.log("Change Attempted");
-}
+};
 
-// Get the element with id="defaultOpen" and click on it
-window.addEventListener("load", function(){
-  this.document.getElementById("defaultOpen").click();
-});
 
 function toggleDisplay(elemId) {
   var x = document.getElementById(elemId);
@@ -48,4 +44,9 @@ function toggleDisplay(elemId) {
   } else {
     x.style.display = "none";
   }
-}
+};
+
+// Get the element with id="defaultOpen" and click on it
+window.addEventListener("load", function(){
+  this.document.getElementById("defaultOpen").click();
+});

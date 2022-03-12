@@ -1,7 +1,7 @@
 /*Font Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fira+Code:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Major+Mono+Display&family=Nanum+Gothic+Coding:wght@400;700&family=Oxygen+Mono&family=PT+Mono&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne+Mono&family=VT323&display=swap');
 
-/*Fonts*/
+/*Fonts
 font-family: 'Anonymous Pro', monospace;
 font-family: 'Courier Prime', monospace;
 font-family: 'Cousine', monospace;
@@ -14,6 +14,7 @@ font-family: 'Roboto Mono', monospace;
 font-family: 'Space Mono', monospace;
 font-family: 'Syne Mono', monospace;
 font-family: 'VT323', monospace;
+*/
 
 *{box-sizing: border-box;margin:0;padding:0;}
 
@@ -230,6 +231,10 @@ nav ul{line-height: 1.6;text-align: center;}
     margin: auto;
     border-radius: 2rem;
     border: 2px solid black;
+}
+
+.youtube-embed{
+  max-width: 98%;
 }
 
 /*Project Page Styles */
