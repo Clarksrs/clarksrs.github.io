@@ -140,10 +140,9 @@ nav ul{line-height: 1.6;text-align: center;}
 .homeCard{
     margin: 1rem auto;
     padding: 1rem;
-    max-width: 100%;
+    max-width: fit-content;
     background-color: #103F85;
     border-radius: 1rem;
-    max-width: 1440px;
     border: 2px solid black;
 }
 
@@ -152,6 +151,7 @@ nav ul{line-height: 1.6;text-align: center;}
   padding: .5em;
   margin: 1em auto;
   border: none;
+  max-width: fit-content;
   background-color: #0C0926;
   width:90%;
   border-radius: 1rem;
@@ -215,6 +215,7 @@ nav ul{line-height: 1.6;text-align: center;}
   margin:1rem auto;
   border-radius: 1rem;
   background-color:#FFC0FF;
+  max-width: fit-content;
   border: 2px solid black;
   color:black;
   
@@ -236,7 +237,7 @@ nav ul{line-height: 1.6;text-align: center;}
 /*Project Page Styles */
 .projectPanel{
     background-color:#3A2B3B;
-    width:100%;
+    width:auto;
     padding: .5em;
     margin: auto;
     justify-content: center;
