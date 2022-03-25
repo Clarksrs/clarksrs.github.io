@@ -158,8 +158,8 @@ nav ul{line-height: 1.6;text-align: center;}
   color:#059AD2;
   border: 2px solid #F63EF2;
   display:flex;
-  justify-content: center; 
-  align-content: center;
+  justify-content: space-around; 
+  align-content: space-around;
 }
 
 .musicCardHead{
@@ -209,6 +209,13 @@ nav ul{line-height: 1.6;text-align: center;}
 .musicPanel ul li{
   color:#73BF7F;
   font-weight: normal;
+}
+
+.bandcampEmbed{
+  max-width: 100%;
+  height:400px;
+  padding:0.1rem;
+  border-radius: 1rem;   
 }
 
 /*Video Page Styles */
@@ -275,6 +282,8 @@ nav ul{line-height: 1.6;text-align: center;}
     width:100%;
   }
 
+
+
   /* Generic pane rules */
   .row, .col { overflow: hidden; position: absolute; }
   .row { left: 0; right: 0; }
@@ -287,3 +296,4 @@ nav ul{line-height: 1.6;text-align: center;}
   /* end of screen rules. */ 
 
 }
+/*QUERY END*/
