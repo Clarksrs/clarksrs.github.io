@@ -57,7 +57,7 @@ font-family: 'VT323', monospace;
   background-color: #777;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+/* Style the tab content */
 .tabcontent {
   color: white;
   display: none;
@@ -66,7 +66,7 @@ font-family: 'VT323', monospace;
   text-align: center;
 }
 
-/* Set height of body and the document to 100% */
+/*this gets overwritten but lets have it anyway*/
 body, html {
     margin: 0;
     font-family: 'Anonymous Pro', monospace;
@@ -218,6 +218,11 @@ nav ul{line-height: 1.6;text-align: center;}
   border-radius: 1rem;   
 }
 
+.twitch-embed{
+  height:240px;
+  width:320px;
+}
+
 /*Video Page Styles */
 
 .videoCard{
@@ -228,8 +233,7 @@ nav ul{line-height: 1.6;text-align: center;}
   width: 75rem;
   max-width:98%;
   border: 2px solid black;
-  color:black;
-  
+  color:black;  
 }
 
 .videoPanel{
@@ -266,6 +270,7 @@ nav ul{line-height: 1.6;text-align: center;}
   border-radius: 1rem;
 }
 
+/*Media Queries*/
 @media screen and (max-width:420px) and (orientation:portrait) {
   .musicCard{
     display:inline-block;
@@ -275,14 +280,9 @@ nav ul{line-height: 1.6;text-align: center;}
     font-size: 1.5rem;
   }
 
-  .videoCard{
-  }
-
   .musicCardHead{
     width:100%;
   }
-
-
 
   /* Generic pane rules */
   .row, .col { overflow: hidden; position: absolute; }
