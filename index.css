@@ -172,11 +172,14 @@ nav ul{line-height: 1.6;text-align: center;}
   width:fit-content;
 }
 
+.musicCard ol{max-width:90%;margin-left:2rem;}
 .musicCard ol li{cursor: pointer;}
 .musicCard ol li:hover{color:#F3F}
 .musicCard ol li:active{color:#FaF}
+.albumDescription{max-width:420px;}
 .trackDescription{
   display:none;
+  max-width:400px;
 }
 
 .left{text-align: left;}
@@ -215,7 +218,8 @@ nav ul{line-height: 1.6;text-align: center;}
   margin:1rem auto;
   border-radius: 1rem;
   background-color:#FFC0FF;
-  max-width: fit-content;
+  width: 75rem;
+  max-width:98%;
   border: 2px solid black;
   color:black;
   
@@ -255,13 +259,20 @@ nav ul{line-height: 1.6;text-align: center;}
   border-radius: 1rem;
 }
 
-@media screen and (max-width:375px) and (orientation:portrait) {
+@media screen and (max-width:420px) and (orientation:portrait) {
   .musicCard{
     display:inline-block;
   }
 
   h1{
     font-size: 1.5rem;
+  }
+
+  .videoCard{
+  }
+
+  .musicCardHead{
+    width:100%;
   }
 
   /* Generic pane rules */
