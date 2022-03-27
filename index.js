@@ -49,4 +49,5 @@ function toggleDisplay(elemId) {
 // Get the element with id="defaultOpen" and click on it
 window.addEventListener("load", function(){
   this.document.getElementById("defaultOpen").click();
+  console.log("page loaded");
 });
