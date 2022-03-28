@@ -155,7 +155,7 @@ nav ul{line-height: 1.6;text-align: center;}
   border: none;  
   background-color: #0C0926;
   width:48rem;
-  max-width: 48rem;
+  max-width: 100%;
   border-radius: 1rem;
   color:#059AD2;
   border: 2px solid #F63EF2;
@@ -194,6 +194,7 @@ nav ul{line-height: 1.6;text-align: center;}
 .musicPanel{
   background-color:#673B9C;
   width:100%;
+  max-width: 100%;
   padding: .5em;
   margin: auto;
   border-radius: 2rem;
@@ -281,12 +282,13 @@ nav ul{line-height: 1.6;text-align: center;}
 .project-embed{
   min-height: 400px;
   width:40rem;
+  max-width:100%;
 }
 
 /*Media Queries*/
 @media screen and (max-width:420px) and (orientation:portrait) {
   .musicCard{
-    display:inline-block;
+    display:block;
   }
 
   h1{
@@ -304,6 +306,7 @@ nav ul{line-height: 1.6;text-align: center;}
   .twitch-embed{
     height:15rem;
     width:20rem;
+    max-width:100%;
   }
 
   /* Generic pane rules */
