@@ -249,6 +249,7 @@ nav ul{line-height: 1.6;text-align: center;}
   min-width: 240px;
   width:48rem;
   max-width: 98%;
+  height:26rem;
 }
 
 /*Project Page Styles */
@@ -307,6 +308,10 @@ nav ul{line-height: 1.6;text-align: center;}
     height:15rem;
     width:20rem;
     max-width:100%;
+  }
+
+  .youtube-embed{
+    max-height: 25rem;
   }
 
   /* Generic pane rules */
