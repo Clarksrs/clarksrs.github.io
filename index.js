@@ -13,6 +13,7 @@ function openPage(pageName,elmnt,color) {
     elmnt.style.backgroundColor = color;
   };
 
+  
 //Twitch Embed
 new Twitch.Embed("twitch-embed", {
   width: 360,
@@ -45,9 +46,3 @@ function toggleDisplay(elemId) {
     x.style.display = "none";
   }
 };
-
-// Get the element with id="defaultOpen" and click on it
-window.addEventListener("load", function(){
-  this.document.getElementById("defaultOpen").click();
-  console.log("page loaded");
-});
