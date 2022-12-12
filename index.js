@@ -13,23 +13,6 @@ function openPage(pageName,elmnt,color) {
     elmnt.style.backgroundColor = color;
   };
 
-  
-//Twitch Embed
-new Twitch.Embed("twitch-embed", {
-  width: 360,
-  height: 240,
-  channel: "skippyzk",
-  parent: ["https://clarksrs.github.io/", "https://pages.github.io/"]
-});
-
-var options = {
-  width: 360,
-  height: 240,
-  channel: skippyzk,
-  video: "",
-  collection: "",
-  parent: ["clarksrs.github.io/", "pages.github.io/"]
-};
 
 //Toggle Music Track Descriptions
 function toggleDescription(trackID){
